@@ -148,7 +148,7 @@ button:focus {
     letter-spacing: 0.02em;
     color: var(--hero-color);
     padding: 24px 0;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current {
@@ -179,7 +179,7 @@ button:focus {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--body-text-color);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero {
@@ -231,7 +231,7 @@ button:focus {
     display: block;
     margin: 0 auto;
     border: none; 
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .work-principles-list {
@@ -368,7 +368,7 @@ button:focus {
     height: 100%;
     border-radius: 50%;
     background-color: var(--logo-brand-color);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
@@ -422,7 +422,8 @@ button:focus {
     border-radius: 4px;
     border: 1px solid #8e8f99;
     color: #8e8f99;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .lol {
@@ -506,7 +507,7 @@ button:focus {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:hover,
@@ -535,7 +536,10 @@ button:focus {
     border: 1px solid #E7E9FC;
     padding: 12px 24px;
     border-radius: 4px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: olor 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-button:hover,
@@ -581,12 +585,13 @@ button:focus {
 
 .project-link {
     display: block;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-link:hover .overlay,
 .project-link:focus .overlay {
     transform: translateY(0%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-link:hover, .project-link:focus {
@@ -634,7 +639,7 @@ button:focus {
 
 .modal {
     width: 408px;
-    min-height: 576px;
+    min-height: 584px;
     background: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -659,5 +664,17 @@ button:focus {
     height: 24px;
     border-radius: 50%;
     cursor: pointer;
-    transition: background-color , border ;
+    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    border: none;
+    background-color: var(--pressed-state-color);
+}
+
+.modal-close-btn:hover .close-btn-icon,
+.modal-close-btn:focus .close-btn-icon {
+    fill: var(--page-background-color);
 }
