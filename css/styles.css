@@ -62,7 +62,7 @@ button:focus {
 .page-header {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #e7e9fc;
+    border-bottom: 1px solid var(--subtle-background-color);
     box-shadow: 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -247,7 +247,7 @@ button:focus {
     display: flex;
         align-items: center;
         justify-content: center;
-        background: #F4F4FD;
+        background: var(--light-mode-background-color);
         border-radius: 4px;
         margin-bottom: 8px;
         height: 112px;
@@ -420,8 +420,8 @@ button:focus {
     justify-content: center;
     align-items: center;
     border-radius: 4px;
-    border: 1px solid #8e8f99;
-    color: #8e8f99;
+    border: 1px solid var(--helper-text-color);
+    color: var(--helper-text-color);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -512,7 +512,7 @@ button:focus {
 
 .footer-social-link:hover,
 .footer-social-link:focus {
-    background-color: #31d0aa;
+    background-color: var(--success-messages-color);
 }
 
 .portfolio {
@@ -533,7 +533,7 @@ button:focus {
     letter-spacing: 0.04em;
     color: var(--logo-brand-color);
     background-color: var(--light-mode-background-color);
-    border: 1px solid #E7E9FC;
+    border: 1px solid var(--subtle-background-color);
     padding: 12px 24px;
     border-radius: 4px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -599,7 +599,7 @@ button:focus {
 
 .project-link-border {
     padding: 32px 16px;
-    border: 1px solid #e7e9fc;
+    border: 1px solid var(--subtle-background-color);
     border-top: none;
 }
 
@@ -639,7 +639,7 @@ button:focus {
 .modal {
     width: 408px;
     min-height: 584px;
-    background: #FCFCFC;
+    background: var(--modal-background-color);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     position: absolute;
@@ -656,7 +656,7 @@ button:focus {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#E7E9FC ;
+    background-color: var(--subtle-background-color) ;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
     width: 24px;
